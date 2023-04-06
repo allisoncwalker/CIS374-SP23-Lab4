@@ -39,6 +39,18 @@ namespace Lab4
             }
         }
 
+        public bool IsEmpty
+        {
+            get
+            {
+                if (Persons.Count == 0)
+                {
+                    return true;
+                }
+                else return false;
+            }
+        }
+
         public PersonGroup(List<Person> persons = null)
         {
             if( persons != null)
@@ -74,9 +86,9 @@ namespace Lab4
 
             foreach (Person person in persons)
             {
-                if (Groupon = 0)
+                if (Groupon.IsEmpty)
                 {
-                    Groupon.Persons.Add(person); 
+                    Groupon.Persons.Add(person);
                 }
                 else if(person.Distance(Groupon[0]) <= distance)
                 {
