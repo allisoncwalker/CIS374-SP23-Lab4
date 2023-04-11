@@ -13,12 +13,13 @@ namespace Lab4
             }
         }
 
-        // Finished
+        // Finished 
         public char? EndingLetter
         {
             get
             {
-                return Persons[0].FirstName[-1];
+                //This makes it by ending letter
+                return Persons[-1].FirstName[0];
             }
         }
 
@@ -70,7 +71,7 @@ namespace Lab4
         }
 
 
-        // Finished ?
+        // Finished 
         public static List<PersonGroup> GeneratePersonGroups(List<Person> persons, int distance)
         {
             persons.Sort();
@@ -106,7 +107,6 @@ namespace Lab4
             //personGroups.Add(Groupon);
             //Groupon = new PersonGroup();
             //Groupon.Persons.Add(person);
-          
 
             return personGroups;
         }
